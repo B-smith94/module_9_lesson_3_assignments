@@ -1,3 +1,10 @@
+<!--Assignment 1
+Task 1: Apply Bootstrap typography classes to headings and paragraphs
+Task 2: Style links and buttons with color classes
+Task 3: Experiment with bootstrap's text alignment and emphasis classes
+Task 4: Customize the background and text color of various sections using Bootstrap's color utilities
+Task 5: Craete a responsive table with alternate row colors using Bootstrap's table classes
+--> 
 
 <!DOCTYPE html>
 <html>
@@ -9,13 +16,14 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </head>
     <body>
-        <!--Assignment 2, Task 1-->
+        
         <header class="img-thumbnail" style="background-image: url('pictures/tech_background.jpg'); background-color: #cccccc;">
+            <!--Task 1 and 3-->
             <h1 class="text-center text-light">Tech Solutions</h1>
             <p class="text-center text-light">Welcome to Tech Solutions, your go-to company for all your technological needs!</p>
         </header>
-        <!--Assignment 2, Task 3-->
-        <section class="container my-5">
+        <!--Task 4-->
+        <section class="container my-5 bg-info text-light border rounded">
             <div class="row g-4">
                 <div class="col-12 col-md-8">
                     <h3>About Us</h3>
@@ -26,6 +34,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <ul>
+                        <!--Task 1 and 3-->
                         <h4 class="fs-5 fw-bold">Company Values:</h4>
                         <li>Quality Service</li>
                         <li>Newest, most advanced technology</li>
@@ -34,8 +43,8 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid my-5"> 
-            <!--Assignment 1, Task 1 and Assignment 2, Task 2-->
+        <!--Task 4-->
+        <section class="container-fluid my-5 bg-primary text-light border"> 
             <h2 class="mb-4">Services</h2>
             <div class="row g-4">
                 <article class="col-12 col-md-4">
@@ -61,8 +70,8 @@
                 </article>
             </div>      
         </section>
-        <section>
-            <!--Assignment 1, Task 2-->
+        <!--Task 4-->
+        <section class="bg-light p-3 border rounded-top">
             <form>
                 <div class="row mb-3">
                     <label for="name" class="col-sm-2 col-form-label">Name:</label>
@@ -99,33 +108,34 @@
                     
                     <textarea class="form-control" name="comments" id="commments" style="height: 100px" placeholder="Share any additional comments or questions here."></textarea>
                 </div>
+                <!--Task 2-->
                 <div class="btn-group" role="group" aria-label="submit and reset buttons">
                     <button type="reset" class="btn btn-outline-secondary">Reset</button>
                     <button type="submit" class="btn btn-outline-primary">Submit</button> 
                 </div>
             </form>
         </section>
-        <!--Assignment 2, Task 4-->
         <footer class="container-flex p-5 bg-info">
             <div class="row mb-3">
                 <div class="col-12 col-md-4">
                     <h5>Contact information</h5>
                     <ul>
-                        <li>Phone: <a href="tel:123-456-7890">(123) 456-7890</a></li>
-                        <li>Email: <a href="mailto:techsolutions@example.com">techsolutions@example.com</a></li>
+                        <!--Task 2-->
+                        <li>Phone: <a href="tel:123-456-7890" class="text-light">(123) 456-7890</a></li>
+                        <li>Email: <a href="mailto:techsolutions@example.com" class="text-light">techsolutions@example.com</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-4">
                     <h5>Social Media Links</h5>
                     <ul>
-                        <li><a href="http://www.facebook.com">Facebook</a></li>
-                        <li><a href="http://www.bsky.com">Bluesky</a></li>
+                        <!--Task 2-->
+                        <li><a href="http://www.facebook.com" class="text-light">Facebook</a></li>
+                        <li><a href="http://www.bsky.com" class="text-light">Bluesky</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-4">
                     <h5>Sign Up for Our Newsletter:</h5>
                     <form>
-                        
                         <label for="email" class="form-label">Email:</label>
                         <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email here">
                         <button type="submit" class="btn btn-primary">Submit</button>
