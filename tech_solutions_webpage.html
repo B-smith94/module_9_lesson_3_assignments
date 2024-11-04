@@ -5,7 +5,10 @@ Task 3: Experiment with bootstrap's text alignment and emphasis classes
 Task 4: Customize the background and text color of various sections using Bootstrap's color utilities
 Task 5: Create a responsive table with alternate row colors using Bootstrap's table classes
 --> 
-
+<!--Assignment 2
+Task 1: Use Bootstrap classes to create responsive images
+Task 2: Use Bootstrap grid system to create an image gallery
+Task 3: Implement a responsive footer with relavent information and links-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,12 +19,13 @@ Task 5: Create a responsive table with alternate row colors using Bootstrap's ta
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </head>
     <body>
+        <!--Assignment 2, Task 1-->
         <header class="img-thumbnail" style="background-image: url('pictures/tech_background.jpg'); background-color: #cccccc;">
-            <!--Task 1 and 3-->
+            <!--Assignment 1, Task 1 and 3-->
             <h1 class="text-center text-light">Tech Solutions</h1>
             <p class="text-center text-light">Welcome to Tech Solutions, your go-to company for all your technological needs!</p>
         </header>
-        <!--Task 4-->
+        <!--Assignment 1, Task 4-->
         <section class="container my-5 bg-info text-light border rounded">
             <div class="row g-4">
                 <div class="col-12 col-md-8">
@@ -33,7 +37,7 @@ Task 5: Create a responsive table with alternate row colors using Bootstrap's ta
                 </div>
                 <div class="col-12 col-md-4">
                     <ul>
-                        <!--Task 1 and 3-->
+                        <!--Assignment 1, Task 1 and 3-->
                         <h4 class="fs-5 fw-bold">Company Values:</h4>
                         <li>Quality Service</li>
                         <li>Newest, most advanced technology</li>
@@ -42,7 +46,7 @@ Task 5: Create a responsive table with alternate row colors using Bootstrap's ta
                 </div>
             </div>
         </section>
-        <!--Task 4-->
+        <!--Assignment 1, Task 4--><!--Assignment 2, Task 1 and 2-->
         <section class="container-fluid my-5 bg-primary text-light border"> 
             <h2 class="mb-4">Services</h2>
             <div class="row g-4">
@@ -69,7 +73,7 @@ Task 5: Create a responsive table with alternate row colors using Bootstrap's ta
                 </article>
             </div>      
         </section>
-        <!--Task 5-->
+        <!--Assignent 1, Task 5-->
         <section>
             <table class="table table-striped table-hover">
                 <tr>
@@ -94,7 +98,7 @@ Task 5: Create a responsive table with alternate row colors using Bootstrap's ta
                 </tr>
             </table>
         </section>
-        <!--Task 4-->
+        <!--Assignment 1, Task 4-->
         <section class="bg-light p-3 border rounded-top">
             <form>
                 <div class="row mb-3">
@@ -132,19 +136,20 @@ Task 5: Create a responsive table with alternate row colors using Bootstrap's ta
                     
                     <textarea class="form-control" name="comments" id="commments" style="height: 100px" placeholder="Share any additional comments or questions here."></textarea>
                 </div>
-                <!--Task 2-->
+                <!--Assignment 1, Task 2-->
                 <div class="btn-group" role="group" aria-label="submit and reset buttons">
                     <button type="reset" class="btn btn-outline-secondary">Reset</button>
                     <button type="submit" class="btn btn-outline-primary">Submit</button> 
                 </div>
             </form>
         </section>
-        <footer class="container-flex p-5 bg-info">
+        <!--Assignent 2, Task 3-->
+        <footer class="container-flex pt-3 pb-1 mb-1 bg-info">
             <div class="row mb-3">
                 <div class="col-12 col-md-4">
                     <h5>Contact information</h5>
                     <ul>
-                        <!--Task 2-->
+                        <!--Assignment 1, Task 2-->
                         <li>Phone: <a href="tel:123-456-7890" class="text-light">(123) 456-7890</a></li>
                         <li>Email: <a href="mailto:techsolutions@example.com" class="text-light">techsolutions@example.com</a></li>
                     </ul>
@@ -152,7 +157,7 @@ Task 5: Create a responsive table with alternate row colors using Bootstrap's ta
                 <div class="col-12 col-md-4">
                     <h5>Social Media Links</h5>
                     <ul>
-                        <!--Task 2-->
+                        <!--Assignment 1, Task 2-->
                         <li><a href="http://www.facebook.com" class="text-light">Facebook</a></li>
                         <li><a href="http://www.bsky.com" class="text-light">Bluesky</a></li>
                     </ul>
@@ -165,6 +170,8 @@ Task 5: Create a responsive table with alternate row colors using Bootstrap's ta
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
+                <!--Assignment 1, Task 1-->
+                <p class="text-light text-center">&copy;Tech Solutions, inc. All rights reserved.</p>
             </div>
         </footer>
     </body>
